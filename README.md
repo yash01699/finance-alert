@@ -1,4 +1,4 @@
-# Finance alert — Kotak SMS → Telegram
+# Finance alert — Bank SMS → Telegram
 
 Fires on **every transaction** (via your bank's SMS), tells you the amount and
 how much **budget** you have left this month. Warns you once when your monthly
