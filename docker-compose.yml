@@ -1,0 +1,21 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    volumes:
+      - ./finance.db:/app/finance.db
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    command: http app:5000
+    environment:
+      - NGROK_AUTHTOKEN=2k9k2SHOvhhKBsEM4YEHSSUmhsa_51YSzsSer1R1Kr3LEj1rT
+    ports:
+      - "4040:4040"
+    depends_on:
+      - app
+    restart: unless-stopped

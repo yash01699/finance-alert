@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.venv/bin/python -c \"import notify; notify.send\\('✅ <b>Finance alert</b> test — email channel is live'\\); print\\('SENT OK'\\)\")",
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(.venv/bin/python -c \"import notify; notify.send\\('✅ <b>Finance alert</b> test — Telegram channel is live'\\); print\\('SENT OK'\\)\")",
+      "Bash(.venv/bin/python -c 'import db; db.init_db\\(\\) *)"
+    ]
+  }
+}
