@@ -6,7 +6,7 @@ services:
     env_file:
       - .env
     volumes:
-      - ./finance.db:/app/finance.db
+      - ./finance.db:/data/finance.db
     restart: unless-stopped
 
   ngrok:
