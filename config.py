@@ -24,4 +24,4 @@ TELEGRAM_CHAT_ID = _get("TELEGRAM_CHAT_ID", required=True)
 WEBHOOK_SECRET = _get("WEBHOOK_SECRET", required=True)
 PORT = int(_get("PORT", "5000"))
 
-DB_PATH = _get("DB_PATH", os.path.join(os.path.dirname(__file__), "finance.db"))
+DB_PATH = _get("DB_PATH", "/data/finance.db")
